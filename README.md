@@ -6,29 +6,24 @@ Android角标-反编译QQ-apk所得, 为系统广播/Launcher提供(未深入研
 
 1. Launcher上显示的
   
-    Intent intent = new Intent(
+        Intent intent = new Intent(
 				"android.intent.action.APPLICATION_MESSAGE_UPDATE");
-		// replace the extra value with your_package_name/your_main_activity_name
-		intent.putExtra(
-				"android.intent.extra.update_application_component_name",
-				"android.intclub.net./.MainActivity");
-		// replase the extra value with the text your want to be displayed
-		intent.putExtra("android.intent.extra.update_application_message_text",
-				"999");
-		sendBroadcast(intent);
-
-
+        // replace the extra value with your_package_name/your_main_activity_name
+        intent.putExtra("android.intent.extra.update_application_component_name",
+                "android.intclub.net./.MainActivity");
+        // replase the extra value with the text your want to be displayed
+        intent.putExtra("android.intent.extra.update_application_message_text", "999");
+        sendBroadcast(intent);
 
 
 2. 关于应用内部控件角标的实现:
-github上有项目: 
+github上有项目:
 	@jgilfelt/android-viewbadger
 	@stefanjauker/BadgeView
 
 
 下面也有实例:
 	@http://my.oschina.net/droidwolf/blog/285411
-	
 	@https://bitbucket.org/droidwolf/superscriptview
 		
 如下图，角标在移动设备中是比较常见的ui元素。各种“最新”、“vip”、“最热”之类的层出不穷。
