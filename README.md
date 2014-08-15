@@ -1,11 +1,11 @@
 AppMessageText
 ==============
 
-Android角标-反编译QQ-apk所得, 为系统广播/Launcher提供(未深入研究)
+Android角标
 
 
-1. Launcher上显示的
-  
+1. Launcher上显示的(反编译QQ-apk所得, 为系统广播/Launcher提供(未深入研究))
+
         Intent intent = new Intent(
 				"android.intent.action.APPLICATION_MESSAGE_UPDATE");
         // replace the extra value with your_package_name/your_main_activity_name
