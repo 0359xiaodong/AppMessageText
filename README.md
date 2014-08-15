@@ -27,6 +27,8 @@ github上有项目:
 
 
 下面也有实例:
+	@http://my.oschina.net/droidwolf/blog/285411
+	
 	@https://bitbucket.org/droidwolf/superscriptview
 		
 如下图，角标在移动设备中是比较常见的ui元素。各种“最新”、“vip”、“最热”之类的层出不穷。
@@ -81,8 +83,10 @@ ga=cos(∠gad)*da=cos(∠ebf)*ef
 eg=ea-ga
 
   到这里就是怎么在代码中对TextView做移动和旋转动作了。由于多次尝试直接对Canvas做移动旋转失败，所以我采用Animation来完成这一系列动作。下面是实现控件的代码。
+
 	
 package com.droidwolf.superscript;
+
  
 import android.content.Context;
 import android.graphics.Matrix;
@@ -93,7 +97,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.TextView;
- 
+
 public class SuperscriptView extends TextView {
     private float mDegress,mX,mY;
     private int mHeight,mWidth;
